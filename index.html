@@ -7,7 +7,31 @@
     <body>
         <div class="container">
             <h2>UCL Throwback</h2>
+
+            <div class="game-selector">
+                <button class="game-btn active" data-game="1">Game 1</button>
+                <button class="game-btn" data-game="2">Game 2</button>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-marker" data-minute="23" data-event="Bernardo Silva scores">
+                    <span class="minute">23'</span>
+                </div>
+                <div class="timeline-marker" data-minute="45" data-event="Half Time">
+                    <span class="minute">45'</span>
+                </div>
+                <!-- More markers -->
+            </div>
+
+            <div class="event-display">
+                <p id="event-text">Click on a moment to see details</p>
+            </div>
+
+            <div class="stats-container" id="game1-stats">
+                <!-- Stats grid like you have now -->
+            </div>
         </div>
+
         <script src="script.js"></script>
     </body>
 </html>
