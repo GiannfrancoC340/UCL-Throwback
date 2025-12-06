@@ -24,3 +24,17 @@ document.addEventListener('click', (e) => {
         document.getElementById('event-text').textContent = event;
     }
 });
+
+// Add click handlers to timeline markers
+document.querySelectorAll('.timeline-marker').forEach(marker => {
+    marker.addEventListener('click', () => {
+        const event = marker.dataset.event;
+        document.getElementById('event-text').textContent = event;
+        
+        // Optional: highlight selected marker
+        document.querySelectorAll('.timeline-marker').forEach(m => {
+            m.style.boxShadow = 'none';
+        });
+        marker.style.boxShadow = '0 0 15px rgba(0,0,0,0.5)';
+    });
+});
