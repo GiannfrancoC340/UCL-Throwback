@@ -1,7 +1,9 @@
 .container {
     border: 2px solid black;
     width: 80vw;
-    height: 200vh;
+    min-height: 180vh;
+    height: auto;
+    padding-bottom: 40px;
 }
 
 h1 {
