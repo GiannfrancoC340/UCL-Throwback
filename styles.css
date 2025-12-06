@@ -63,6 +63,26 @@ h1 {
     color: #333;
 }
 
+/* New game header container */
+.game-header {
+    display: flex;
+    flex-direction: row;  /* Row for logos and title */
+    align-items: center;
+    justify-content: center;
+    gap: 20px;  /* Space between logo, title, logo */
+    margin-bottom: 10px;
+}
+
+.game-header h2 {
+    margin: 0;  /* Remove default margin */
+}
+
+.team-logo {
+    width: 60px;  /* Adjust size as needed */
+    height: 60px;
+    object-fit: contain;  /* Maintains aspect ratio */
+}
+
 /* Game styles */
 .game-selector {
     display: flex;
