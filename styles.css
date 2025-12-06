@@ -6,8 +6,89 @@
 
 h1 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 
+/* Horizontal lines */
+.main-hr {
+    border: none;
+    border-top: 2px solid #ccc;
+    width: 95%;
+    margin: 10px auto;
+}
+
+.secondary-hr {
+    border: none;
+    border-top: 2px solid #eaeaea;
+    width: 75%;
+    margin: 10px auto;
+}
+
+/* Stats styles */
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    width: 100%;
+    padding: 8px 20px;
+    align-items: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.stat-left {
+    text-align: right;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.stat-middle {
+    text-align: center;
+    font-size: 16px;
+    color: #667;
+}
+
+.stat-right {
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Game styles */
+.game-selector {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.game-content {
+    display: none;  /* Hide by default */
+}
+
+.game-content.active {
+    display: block;  /* Show when active */
+}
+
+.game-btn {
+    padding: 10px 20px;
+    background: #ddd;
+    border: none;
+    cursor: pointer;
+}
+
+.game-btn.active {
+    background: #0088ff;
+    color: white;
+}
+
+/* Timeline styles */
 .timeline {
     position: relative;
     width: 90%;
@@ -45,68 +126,4 @@ h1 {
     transform: translateX(-50%);
     font-weight: bold;
     font-size: 12px;
-}
-
-.main-hr {
-    border: none;
-    border-top: 2px solid #ccc;
-    width: 95%;
-    margin: 10px auto;
-}
-
-.secondary-hr {
-    border: none;
-    border-top: 2px solid #eaeaea;
-    width: 85%;
-    margin: 10px auto;
-}
-
-.stat-row {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    width: 100%;
-    padding: 8px 20px;
-    align-items: center;
-    gap: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.stat-left {
-    text-align: right;
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-}
-
-.stat-middle {
-    text-align: center;
-    font-size: 16px;
-    color: #667;
-}
-
-.stat-right {
-    text-align: left;
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-}
-
-.game-content {
-    display: none;  /* Hide by default */
-}
-
-.game-content.active {
-    display: block;  /* Show when active */
-}
-
-.game-btn {
-    padding: 10px 20px;
-    background: #ddd;
-    border: none;
-    cursor: pointer;
-}
-
-.game-btn.active {
-    background: #0088ff;
-    color: white;
 }
