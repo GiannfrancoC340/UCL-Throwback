@@ -1,10 +1,10 @@
 .container {
-    width: 100vh;
-    height: 100vh;
     border: 2px solid black;
+    width: 80vw;
+    height: 200vh;
 }
 
-h2 {
+h1 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -89,4 +89,24 @@ h2 {
     font-size: 24px;
     font-weight: bold;
     color: #333;
+}
+
+.game-content {
+    display: none;  /* Hide by default */
+}
+
+.game-content.active {
+    display: block;  /* Show when active */
+}
+
+.game-btn {
+    padding: 10px 20px;
+    background: #ddd;
+    border: none;
+    cursor: pointer;
+}
+
+.game-btn.active {
+    background: #0088ff;
+    color: white;
 }
