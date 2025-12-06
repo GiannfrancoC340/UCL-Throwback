@@ -13,28 +13,25 @@ function showGame(gameNumber) {
     });
     event.target.classList.add('active');
     
-    // Clear event text when switching games
+    // Clear event text and highlights when switching games
     document.getElementById('event-text').textContent = 'Click on a moment to see details';
+    document.querySelectorAll('.timeline-marker').forEach(m => {
+        m.style.boxShadow = 'none';
+    });
 }
 
-// Timeline marker clicks
+// Event delegation - single listener for all timeline markers
 document.addEventListener('click', (e) => {
     if (e.target.classList.contains('timeline-marker')) {
         const event = e.target.dataset.event;
         document.getElementById('event-text').textContent = event;
-    }
-});
-
-// Add click handlers to timeline markers
-document.querySelectorAll('.timeline-marker').forEach(marker => {
-    marker.addEventListener('click', () => {
-        const event = marker.dataset.event;
-        document.getElementById('event-text').textContent = event;
         
-        // Optional: highlight selected marker
+        // Remove highlight from all markers
         document.querySelectorAll('.timeline-marker').forEach(m => {
             m.style.boxShadow = 'none';
         });
-        marker.style.boxShadow = '0 0 15px rgba(0,0,0,0.5)';
-    });
+        
+        // Highlight clicked marker
+        e.target.style.boxShadow = '0 0 15px rgba(0,0,0,0.5)';
+    }
 });
