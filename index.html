@@ -6,29 +6,90 @@
     </head>
     <body>
         <div class="container">
-            <h2>UCL Throwback</h2>
-
+            <h2>UEFA Champions League</h2>
+            <!-- Toggle Buttons -->
             <div class="game-selector">
-                <button class="game-btn active" data-game="1">Game 1</button>
-                <button class="game-btn" data-game="2">Game 2</button>
+                <button class="game-btn active" onclick="showGame(1)">Game 1</button>
+                <button class="game-btn" onclick="showGame(2)">Game 2</button>
             </div>
 
-            <div class="timeline">
-                <div class="timeline-marker" data-minute="23" data-event="Bernardo Silva scores">
-                    <span class="minute">23'</span>
+            <!-- Game 1 Content -->
+            <div id="game1" class="game-content active">
+                <div class="stats-container">
+                    <!-- Game 1 stats -->
+                    <h2>Real Madrid 1-1 Manchester City</h2>
+                    <hr class="main-hr">
+                <div class="stat-row">
+                    <span class="stat-left">1.73</span>
+                    <span class="stat-middle">xG</span>
+                    <span class="stat-right">0.62</span>
                 </div>
-                <div class="timeline-marker" data-minute="45" data-event="Half Time">
-                    <span class="minute">45'</span>
+                <hr class="secondary-hr">
+                <div class="stat-row">
+                    <span class="stat-left">11</span>
+                    <span class="stat-middle">Shots</span>
+                    <span class="stat-right">6</span>
                 </div>
-                <!-- More markers -->
+                <hr class="secondary-hr">
+                <div class="stat-row">
+                    <span class="stat-left">6</span>
+                    <span class="stat-middle">Shots on Target</span>
+                    <span class="stat-right">3</span>
+                </div>
+                <hr class="secondary-hr">
+                <div class="stat-row">
+                    <span class="stat-left">51%</span>
+                    <span class="stat-middle">Possession</span>
+                    <span class="stat-right">49%</span>
+                </div>
+                <hr class="secondary-hr">
+                <div class="stat-row">
+                    <span class="stat-left">5</span>
+                    <span class="stat-middle">Corners</span>
+                    <span class="stat-right">2</span>
+                </div>
+                <hr class="secondary-hr">
+                <div class="stat-row">
+                    <span class="stat-left">1</span>
+                    <span class="stat-middle">Offsides</span>
+                    <span class="stat-right">0</span>
+                </div>
+                <hr class="secondary-hr">
+                <div class="stat-row">
+                    <span class="stat-left">22</span>
+                    <span class="stat-middle">Fouls Committed</span>
+                    <span class="stat-right">19</span>
+                </div>
+                <hr class="secondary-hr">
+                <div class="stat-row">
+                    <span class="stat-left">4/0</span>
+                    <span class="stat-middle">Yellow/Red Cards</span>
+                    <span class="stat-right">4/0</span>
+                </div>
+                </div>
+                <div class="timeline">
+                    <!-- Game 1 timeline markers -->
+                    <div class="timeline-marker" style="left: 25%;" data-event="23' Bernardo Silva scores"></div>
+                    <div class="timeline-marker" style="left: 40%;" data-event="37' Grealish scores"></div>
+                </div>
+            </div>
+
+            <!-- Game 2 Content -->
+            <div id="game2" class="game-content">
+                <div class="stats-container">
+                    <!-- Game 2 stats -->
+                    <h2>Manchester City 4-0 Real Madrid</h2>
+                    <!-- Your stats here -->
+                </div>
+                <div class="timeline">
+                    <!-- Game 2 timeline markers -->
+                    <div class="timeline-marker" style="left: 15%;" data-event="12' Vinicius Jr scores"></div>
+                    <div class="timeline-marker" style="left: 70%;" data-event="67' De Bruyne scores"></div>
+                </div>
             </div>
 
             <div class="event-display">
                 <p id="event-text">Click on a moment to see details</p>
-            </div>
-
-            <div class="stats-container" id="game1-stats">
-                <!-- Stats grid like you have now -->
             </div>
         </div>
 

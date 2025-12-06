@@ -46,3 +46,47 @@ h2 {
     font-weight: bold;
     font-size: 12px;
 }
+
+.main-hr {
+    border: none;
+    border-top: 2px solid #ccc;
+    width: 95%;
+    margin: 10px auto;
+}
+
+.secondary-hr {
+    border: none;
+    border-top: 2px solid #eaeaea;
+    width: 85%;
+    margin: 10px auto;
+}
+
+.stat-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    width: 100%;
+    padding: 8px 20px;
+    align-items: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.stat-left {
+    text-align: right;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.stat-middle {
+    text-align: center;
+    font-size: 16px;
+    color: #667;
+}
+
+.stat-right {
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
