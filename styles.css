@@ -143,6 +143,21 @@ h1 {
     top: -7px;
 }
 
+/* Special styling for triple substitution */
+.timeline-marker.triple-sub {
+    width: 3px;  /* Slightly wider */
+    background: #000000;
+}
+
+.timeline-marker.triple-sub::before {
+    width: 10px;
+    height: 10px;
+}
+
+.timeline-marker.triple-sub:hover {
+    height: 40px;
+}
+
 /* Event type colors */
 .timeline-marker.goal::before {
     background: #28a745;
@@ -228,8 +243,9 @@ h1 {
 }
 
 #event-text {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
     margin: 0;
     color: #333;
+    white-space: pre-line;
 }

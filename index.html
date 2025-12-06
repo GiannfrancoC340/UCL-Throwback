@@ -222,9 +222,45 @@
                         <span class="stat-right">2/0</span>
                     </div>
                 </div>
-                <div class="timeline">
-                    <!-- Game 2 timeline markers -->
+
+                <!-- Game 2 Timeline -->
+                <div class="timeline-container">
+                    <div class="timeline-bar">
+                        <!-- Goals -->
+                        <div class="timeline-marker goal" style="left: 25%;" data-minute="23'" data-event="23' Bernardo Silva ⚽"></div>
+                        <div class="timeline-marker goal" style="left: 41%;" data-minute="37'" data-event="37' Bernardo Silva ⚽"></div>
+                        <div class="timeline-marker goal" style="left: 84%;" data-minute="76'" data-event="76' Akanji ⚽"></div>
+                        <div class="timeline-marker goal" style="left: 99%;" data-minute="90+1'" data-event="90+1' Alvarez ⚽"></div>
                     
+                        <!-- Yellow cards -->
+                        <div class="timeline-marker yellow-card" style="left: 55%" data-minute="50'" data-event="50' Rúben Dias 🟨"></div>
+                        <div class="timeline-marker yellow-card" style="left: 61%" data-minute="55'" data-event="55' Carvajal 🟨"></div>
+                        <div class="timeline-marker yellow-card" style="left: 69%" data-minute="62'" data-event="62' Gündoğan 🟨"></div>
+                        <div class="timeline-marker yellow-card" style="left: 83%" data-minute="75'" data-event="75' Camavinga 🟨"></div>
+                        <div class="timeline-marker yellow-card" style="left: 98%" data-minute="90+1'" data-event="90+1' Grealish 🟨"></div>
+                    
+                        <!-- Substitutions -->
+                        <div class="timeline-marker substitution" style="left: 70%;" data-minute="63'" data-event="63' Modrić ↔️ Rüdiger"></div>
+                        <div class="timeline-marker substitution" style="left: 77%;" data-minute="70'" data-event="70' Kroos ↔️ Asensio"></div>
+                        <div class="timeline-marker substitution" style="left: 87%;" data-minute="79'" data-event="79' Gündoğan ↔️ Mahrez"></div>
+                        <div class="timeline-marker substitution triple-sub" style="left: 89%;" data-minute="80'" 
+                            data-event="80' Triple Sub: Camavinga ↔️ Tchouaméni | Carvajal ↔️ Lucas Vázquez | Rodrygo ↔️ Ceballos"></div>
+                        <div class="timeline-marker substitution" style="left: 93%;" data-minute="84'" data-event="84' De Bruyne ↔️ Foden"></div>
+                        <div class="timeline-marker substitution" style="left: 96%;" data-minute="89'" data-event="89' Alvarez ↔️ Haaland"></div>
+
+                    
+                        <!-- Stoppage time -->
+                        <div class="timeline-marker stoppage" style="left: 50%;" data-minute="HT" data-event="45' Half Time"></div>
+                        <div class="timeline-marker stoppage" style="left: 100%;" data-minute="FT" data-event="90' Full Time (+3 min)"></div>
+                    </div>
+
+                    <!-- Legend -->
+                    <div class="timeline-legend">
+                        <span><span class="legend-dot goal"></span> Goal</span>
+                        <span><span class="legend-dot yellow-card"></span> Yellow Card</span>
+                        <span><span class="legend-dot substitution"></span> Substitution</span>
+                        <span><span class="legend-dot stoppage"></span> Stoppage Time</span>
+                    </div>
                 </div>
             </div>
 
@@ -232,7 +268,6 @@
                 <p id="event-text">Click on a moment to see details</p>
             </div>
         </div>
-
         <script src="script.js"></script>
     </body>
 </html>
